@@ -11,8 +11,7 @@ const Card = ({ movie, movie: { poster_path, title, vote_average, release_date }
   }, []);
 
   const handleDate = () => {
-    const tanggal = release_date.split("-");
-    const newDate = new Date(tanggal[0], tanggal[1], tanggal[2]);
+    const newDate = new Date(release_date?.split("-")[0], release_date?.split("-")[1], release_date?.split("-")[2]);
     setDate(newDate.toDateString());
   };
 

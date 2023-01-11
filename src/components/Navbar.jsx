@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link to="/">Ray's Cinema</Link>
         </h1>
 
-        <div className="relative lg:flex lg:items-center lg:w-1/4">
+        <div className="relative pt-2 lg:flex lg:items-center lg:w-1/4">
           <div className="lg:hidden">
             <input type="checkbox" className="absolute cursor-pointer z-[1] w-[38px] h-[30px] top-[5px] -right-1 opacity-0" id="button" onClick={handleButtonNav} />
             <span className="w-[30px] h-[2px] bg-black block my-2 translate-x-[-1px] translate-y-[-1px] origin-top-left transition duration-300 ease-in-out"></span>
@@ -35,10 +35,10 @@ const Navbar = () => {
 
           <div className="hidden w-[180px] bg-white shadow-gray-300 shadow-2xl rounded-2xl absolute z-[1] top-12 right-7 p-3 lg:static lg:block lg:w-3/4 lg:bg-transparent lg:shadow-transparent lg:shadow-none lg:rounded-none" id="nav-menu">
             <ul className="lg:flex lg:justify-around">
-              <li className="text-center text-3xl py-4 text-purple-500 hover:text-purple-700 lg:py-2">
+              <li className="text-center text-2xl py-4 text-purple-500 hover:text-purple-700 lg:py-2">
                 <Link to="/">Home</Link>
               </li>
-              <li className="text-center text-3xl py-4 text-purple-500 hover:text-purple-700 lg:py-2">
+              <li className="text-center text-2xl py-4 text-purple-500 hover:text-purple-700 lg:py-2">
                 <Link to="/favorite">Favorite</Link>
               </li>
             </ul>
