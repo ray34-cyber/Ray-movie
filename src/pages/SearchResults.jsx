@@ -73,7 +73,7 @@ const SearchResults = () => {
               <div className="mr-4 rounded-lg bg-teal-400 h-[356px] md:h-[306px]">
                 <img className=" rounded-lg h-[356px] md:h-[306px]" src={movie.poster_path ? `${process.env.REACT_APP_IMG_URL}${movie.poster_path}` : `https://via.placeholder.com/176x265?text=No+image`} alt="" />
               </div>
-              <div className="flex flex-col items-center px-8 ml-10">
+              <div className="flex flex-col items-center px-8 lg:ml-10">
                 <div className="mt-4">
                   <h3 className="mb-4 font-bold text-xl text-center text-neutral-100">{movie.title}</h3>
                 </div>
